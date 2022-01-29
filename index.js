@@ -45,12 +45,8 @@
              console.log(object);
              document.body.innerHTML = object.id
          }).catch(error => {
-            throw(error);
+            document.body.innerHTML=error.message
         })
-        
-         //.catch(error => console.error(error),
-        //     document.body.innerHTML=error
-        
         
      }
     
